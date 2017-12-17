@@ -1,0 +1,31 @@
+[debug] [2017-12-16T01:28:25.643Z] ----------------------------------------------------------------------
+[debug] [2017-12-16T01:28:25.645Z] Command:       /usr/local/bin/node /usr/local/bin/firebase experimental:functions:shell
+[debug] [2017-12-16T01:28:25.646Z] CLI Version:   3.16.0
+[debug] [2017-12-16T01:28:25.646Z] Platform:      darwin
+[debug] [2017-12-16T01:28:25.646Z] Node Version:  v6.11.4
+[debug] [2017-12-16T01:28:25.647Z] Time:          Fri Dec 15 2017 17:28:25 GMT-0800 (PST)
+[debug] [2017-12-16T01:28:25.647Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-12-16T01:28:25.659Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-12-16T01:28:25.659Z] > authorizing via signed-in user
+[debug] [2017-12-16T01:28:25.661Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/pwafirst-28486  
+  
+ Fri Dec 15 2017 17:28:25 GMT-0800 (PST)
+[debug] [2017-12-16T01:28:26.145Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-16T01:28:26.146Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/pwafirst-28486/tokens  
+  
+ Fri Dec 15 2017 17:28:26 GMT-0800 (PST)
+[debug] [2017-12-16T01:28:26.707Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-16T01:28:29.230Z] Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/logs'
+    at Error (native)
+    at Object.fs.mkdirSync (fs.js:924:18)
+    at Object.assertLogsPath (/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/emulator/logs.js:65:10)
+    at new Controller (/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/cli/controller.js:85:32)
+    at FunctionsEmulator.start (/usr/local/lib/node_modules/firebase-tools/lib/functionsEmulator.js:108:21)
+    at Command._action (/usr/local/lib/node_modules/firebase-tools/commands/functions-shell.js:26:21)
+    at /usr/local/lib/node_modules/firebase-tools/lib/command.js:176:29
+    at tryCatch (/usr/local/lib/node_modules/firebase-tools/node_modules/rsvp/dist/rsvp.js:525:12)
+    at invokeCallback (/usr/local/lib/node_modules/firebase-tools/node_modules/rsvp/dist/rsvp.js:538:13)
+    at publish (/usr/local/lib/node_modules/firebase-tools/node_modules/rsvp/dist/rsvp.js:508:7)
+[error] 
+[error] Error: An unexpected error has occurred.
